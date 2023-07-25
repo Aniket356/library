@@ -8,8 +8,27 @@
     <title>Library</title>
 </head>
 <body>
+    <h1>My Library</h1>
+    <form action="" class="book-form">
+        <h2>Add New Book</h2>
+        <div class="form-field">
+            <label for="title">Book Title: </label>
+            <input type="text" name="title" id="title" required>
+        </div>
+        <div class="form-field">
+            <label for="author">Author: </label>
+            <input type="text" name="author" id="author" required>
+        </div>
+        <div class="form-field">
+            <label for="have-read">Have you read the book? </label>
+            <input type="checkbox" name="isRead" id="have-read" required>
+        </div>
+        <div class="submit-btn">
+            <button type="submit">Add Book</button>
+        </div>
+    </form>
+
     <div class="books">
-        
     </div>
 </body>
 </html>
