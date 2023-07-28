@@ -83,6 +83,11 @@ const authorInput = document.querySelector('#author');
 const bookIsReadInput = document.querySelector('#have-read');
 formSubmitBtn.addEventListener('click', (event) => {
     event.preventDefault();
+
+    if(titleInput.value === '' || authorInput.value === ''){
+        return;
+    }
+
     addBookToLibrary(titleInput.value, authorInput.value, bookIsReadInput.checked);
 
     titleInput.value = '';
