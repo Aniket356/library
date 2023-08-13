@@ -1,12 +1,6 @@
 let myLibrary = []
 const booksContainer = document.querySelector('.books');
 
-// function Book(title, author, isRead){
-//     this.title = title;
-//     this.author = author;
-//     this.isRead = isRead;
-// }
-
 class Book {
     constructor(title, author, isRead){
         this.title = title;
